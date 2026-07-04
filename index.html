@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arjun Mehta — Creative Developer</title>
+<meta name="description" content="Portfolio of Arjun Mehta, a creative developer building interactive web experiences." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- grain overlay -->
+<div class="grain"></div>
+<!-- cursor glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <span class="preloader-text">AM</span>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-logo">AM<span class="dot">.</span></a>
+  <nav class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="nav-cta">Let's talk</a>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <canvas id="particles"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow reveal">Creative Developer &amp; Digital Craftsman</p>
+    <h1 class="hero-title">
+      <span class="reveal">Building interfaces</span>
+      <span class="reveal">that feel <em>alive</em>.</span>
+    </h1>
+    <p class="hero-sub reveal">
+      I'm Arjun Mehta — I design and build fast, motion-rich websites and
+      products for founders, studios and teams who want their work online
+      to feel as sharp as it does in real life.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#work" class="btn btn-primary">See the work</a>
+      <a href="#contact" class="btn btn-ghost">Start a project</a>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Front-End Engineering</span><span>•</span>
+    <span>Motion Design</span><span>•</span>
+    <span>WebGL</span><span>•</span>
+    <span>Brand Systems</span><span>•</span>
+    <span>React &amp; Three.js</span><span>•</span>
+    <span>Design Systems</span><span>•</span>
+    <span>Front-End Engineering</span><span>•</span>
+    <span>Motion Design</span><span>•</span>
+    <span>WebGL</span><span>•</span>
+    <span>Brand Systems</span><span>•</span>
+    <span>React &amp; Three.js</span><span>•</span>
+    <span>Design Systems</span><span>•</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-image reveal">
+      <img src="https://i.pravatar.cc/500?img=13" alt="Portrait of Arjun Mehta" loading="lazy" />
+      <div class="about-image-tag">Based in Bengaluru, IN — working worldwide</div>
+    </div>
+    <div class="about-copy">
+      <p class="section-label reveal">01 — About</p>
+      <h2 class="reveal">Eight years turning ambitious ideas into interfaces people remember.</h2>
+      <p class="reveal">
+        I started out reverse-engineering websites just to see how they moved.
+        These days I lead front-end builds for studios and startups —
+        obsessing over the 200ms between a click and a response, because
+        that's usually where trust is won or lost.
+      </p>
+      <p class="reveal">
+        I work end to end: architecture, animation, accessibility, and the
+        unglamorous performance work that makes all of it feel effortless.
+      </p>
+      <div class="stats reveal">
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">Projects shipped</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">8</span>
+          <span class="stat-label">Years in practice</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">12</span>
+          <span class="stat-label">Countries worked with</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="work" id="work">
+  <p class="section-label reveal">02 — Selected Work</p>
+  <h2 class="reveal">A few things I'm proud of.</h2>
+
+  <div class="project-list">
+
+    <article class="project reveal">
+      <div class="project-media">
+        <img src="https://picsum.photos/id/1015/900/650" alt="Northline banking app preview" loading="lazy" />
+      </div>
+      <div class="project-info">
+        <div class="project-head">
+          <h3 class="glitch" data-text="Northline">Northline</h3>
+          <span class="project-year">2025</span>
+        </div>
+        <p>A neobank dashboard rebuilt around real-time data — animated charts, a custom design system, and a 40% drop in load time.</p>
+        <div class="project-tags">
+          <span>React</span><span>D3.js</span><span>Design System</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-media">
+        <img src="https://picsum.photos/id/1025/900/650" alt="Fauna studio site preview" loading="lazy" />
+      </div>
+      <div class="project-info">
+        <div class="project-head">
+          <h3 class="glitch" data-text="Fauna Studio">Fauna Studio</h3>
+          <span class="project-year">2024</span>
+        </div>
+        <p>An immersive portfolio for a stop-motion animation studio, with WebGL scroll-scenes built from their own frame-by-frame work.</p>
+        <div class="project-tags">
+          <span>Three.js</span><span>GSAP</span><span>WebGL</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-media">
+        <img src="https://picsum.photos/id/1035/900/650" alt="Groundwork marketplace preview" loading="lazy" />
+      </div>
+      <div class="project-info">
+        <div class="project-head">
+          <h3 class="glitch" data-text="Groundwork">Groundwork</h3>
+          <span class="project-year">2024</span>
+        </div>
+        <p>A two-sided marketplace for landscape architects — built the component library and micro-interactions from zero to launch.</p>
+        <div class="project-tags">
+          <span>Next.js</span><span>Framer Motion</span><span>Figma</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-media">
+        <img src="https://picsum.photos/id/1050/900/650" alt="Halo audio player preview" loading="lazy" />
+      </div>
+      <div class="project-info">
+        <div class="project-head">
+          <h3 class="glitch" data-text="Halo Player">Halo Player</h3>
+          <span class="project-year">2023</span>
+        </div>
+        <p>A generative, audio-reactive visualizer for an independent record label's release site. Runs entirely in-browser.</p>
+        <div class="project-tags">
+          <span>Canvas API</span><span>Web Audio</span><span>Vanilla JS</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+  <p class="section-label reveal">03 — Experience</p>
+  <h2 class="reveal">Where I've worked.</h2>
+
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-year">2023 — Now</div>
+      <div class="timeline-body">
+        <h3>Lead Creative Developer, Studio Halcyon</h3>
+        <p>Leading front-end and motion for client work across fintech, culture, and consumer brands.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-year">2020 — 2023</div>
+      <div class="timeline-body">
+        <h3>Senior Front-End Engineer, Pixelloop</h3>
+        <p>Built the design system powering 30+ product surfaces; mentored a team of four engineers.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-year">2018 — 2020</div>
+      <div class="timeline-body">
+        <h3>Front-End Developer, Freelance</h3>
+        <p>Shipped marketing sites and micro-interactions for early-stage startups across three continents.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-blob blob-1"></div>
+  <div class="contact-blob blob-2"></div>
+  <div class="contact-inner">
+    <p class="section-label reveal">04 — Contact</p>
+    <h2 class="reveal">Got a project in mind?<br/>Let's build it well.</h2>
+    <a href="mailto:hello@arjunmehta.dev" class="contact-email reveal">hello@arjunmehta.dev</a>
+    <div class="contact-socials reveal">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter / X</a>
+      <a href="#">Dribbble</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>© 2026 Arjun Mehta. All rights reserved.</span>
+  <span>Built with HTML, CSS &amp; JS.</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
